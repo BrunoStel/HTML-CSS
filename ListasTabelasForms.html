@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html> 
+<head>
+        <meta charset="UTF-8">
+        <title>Página de testes</title>
+        <link rel="stylesheet" href="estilo.css"/>
+        
+</head>  
+
+<body>
+        <h1>Página de teste</h1> 
+
+        <!--Listas-->
+        <ul style="list-style-type: square;">
+                <li>Café</li>
+                <li>Chá
+                        <ul>
+                                <li>Chá preto</li>
+                                <li>Chá verde</li>           
+                        </ul>
+                </li>
+                
+                <li>Leite</li>
+        </ul>
+
+         <!--Tabelas-->
+        <table  border="0">
+               <thead> <!--Tag não-visual para inserir o cabeçalho-->
+                        <tr> 
+                                <th>Item 1</th><!--th é tag de cabeçalho-->
+                                <th>Item 2</th>
+                                <th>Item 3</th>
+                        </tr>
+               </thead>
+                <tbody><!--Tag não-visual para inserir o corpo da tabela-->
+                        <tr><!--tr é tag de linha-->
+                                <td>...</td><!--td é tag de coluna-->
+                                <td>...</td>
+                                <td>...</td>
+                        </tr> 
+                        <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                        </tr>
+                        <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                        </tr>
+                        <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                        </tr> 
+                        <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                        </tr> 
+                        <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                        </tr>    
+               </tbody>
+        
+
+        <!--Formulários-->
+               <h1>Área de cadastro</h1>
+                <form action="login.html" target="_blank "method="GET">
+                        <!--Temos types: text, radio, password, checkbox submit -->
+                        <label>
+                                Nome Completo<br/>
+                        <input type="text" name="" />
+
+                        </label>
+                        <!--Temos types HTML5: email, color, date, datetime-local, month, number, range, search, tel, 
+                        time, url, week -->
+                        <label>
+                                Digite o mês do seu aniversário:<br/>
+                                <input type="month" name="" />
+                        </label>
+
+                        <label>
+                                Selecione a categoria<br/>
+                                <select name="ordenacao" > <!--size="2" multiple, opões possiveis-->
+                                        <option value="1">Categoria 1</option>
+                                        <option value="2" selected>Categoria 2</option>
+                                        <option value="3">Categoria 3</option>
+                                        <option value="4">Categoria 4</option>
+                                        <option value="5">Categoria 5</option>
+                                </select>
+                        </label>
+
+                        <!--Segunda forma de colar o label-->
+                        <label for="interesses">Digite seus interesses</label>
+                        <textarea name="descricao" id="interesses"></textarea>
+
+                        <button>Enviar</button> <!--Botão dentro de formulario serve como submit-->
+               </form>
+
+               <h1>Área de Login</h1>
+               <form>
+                       
+
+              </form>
+
+
+
+        </table>
+
+
+
+
+</body>
+
+
+</html>

@@ -1,3 +1,0 @@
--CSS inline : Ele fica dentro da propria tag, como atributo style
--CSS interno: Ele fica no head da pagina HTML
--CSS externo : Ele fica num arquivo .css externo, em geral na mesma pasta dos arquivos HTML  =>Forma mais recomendada
