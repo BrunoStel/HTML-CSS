@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+    margin: 0px;
+    font-size: 25px
+
+}
+/*Degrade*/
+.exemplo1{
+    width: 500px;
+    height: 200px;
+    background-color: violet;
+    background: linear-gradient(-46deg, white,blue);/*Primeiro é a direção, que pode não ser setada, depois as cores*/
+    
+}

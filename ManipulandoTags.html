@@ -19,7 +19,8 @@
 
         <div class="esfera"></div>
 
-        <div class="exemplo">Texto de exemplo</div> 
+        <!--O uso do termo data- tem como objetivo guardar informações dentro do html 5-->
+        <div data-nome="Bruno" data-sobrenome="Roque" class="exemplo">Texto de exemplo</div> 
 
         <a href="login.html" target="_blank" title="Página de login">Página de login</a>
         <br/><br/><br/>
@@ -55,6 +56,38 @@
             <li>Óleo</li>
         </ol>
 
+        <header> <!--Todo conteudo do cabeçalho é inserido dentro dessa tag-->
+            <h1>Página Teste</h1>
+            <p>Subtitulo</p>
+        </header>
+
+        <nav><!--Diz para os motores de busca, e para facilitar a inclusão, pois aqui estarão os menus principais da página-->
+            Menus principais devem ficar aqui
+        </nav>
+
+        <section><!--Para organização o conteudo do site por tópicos, por ex. esportes, culinária, etc-->
+        </section>
+
+        <article><!--Onde o conteúdo principal do site se encontra, ex: noticia específica-->
+        </article>
+
+        <aside><!--Onde o conteúdo secundário da página fica, ou seja, de menos importância-->
+        </aside>
+
+        <time><!--O motor de busca vai saber que isso se refere a uma data, facilitando a indexagem de algumas informações-->
+        </time>
+
+        <footer><!--Rodapé do site-->
+            Rodapé da página
+        </footer>
+
+        <video width="320" height="240" controls> <!--Tag video suporta mp4, ogg, wmv-->
+            <source src="video_exemplo.mp4" type="video/mp4" />
+        </video>
+
+        <audio controls preload>
+            <source src="exemplo_audio.mp3" type="audio/mpeg"/>
+        </audio>
 
 </body>
 
