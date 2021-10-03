@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Página de testes</title>
         <link rel="stylesheet" href="estilo.css"/>
-        
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">        
 </head>  
 
 <body>
@@ -64,24 +64,44 @@
                                 <td>...</td>
                         </tr>    
                </tbody>
+        </table>
         
 
         <!--Formulários-->
                <h1>Área de cadastro</h1>
-                <form action="login.html" target="_blank "method="GET">
+                <form action="login.html" target="_blank "method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="country" value='BR'>
+
                         <!--Temos types: text, radio, password, checkbox submit -->
+                <fieldset>
+                        <legend>Dados Pessoais</legend>
+
                         <label>
                                 Nome Completo<br/>
-                        <input type="text" name="" />
-
+                        <input type="text" name="nome"  required minlength="5" maxlength="40" pattern="[a-z\s]+$" title="Coloque somente letras"/>
                         </label>
+
                         <!--Temos types HTML5: email, color, date, datetime-local, month, number, range, search, tel, 
                         time, url, week -->
                         <label>
-                                Digite o mês do seu aniversário:<br/>
-                                <input type="month" name="" />
+                                Digite a data do seu nascimento:<br/>
+                                <input type="date" name="DN" class="datanascimento"  required  min="1900-01-01"/>
                         </label>
 
+                        <label>
+                                E-mail<br/>
+                        <input type="email" name="nome" class="campoemail" required minlength="5" maxlength="40"/>
+                        </label>
+
+                        <label>
+                                Foto<br/>
+                        <input type="file" name="foto" class="campofoto" accept="image/*" />
+                        </label>
+
+                </fieldset>
+
+                <fieldset>
+                        <legend>Interesses</legend>
                         <label>
                                 Selecione a categoria<br/>
                                 <select name="ordenacao" > <!--size="2" multiple, opões possiveis-->
@@ -97,20 +117,23 @@
                         <label for="interesses">Digite seus interesses</label>
                         <textarea name="descricao" id="interesses"></textarea>
 
+                        <label>
+                                <input type="radio" name="termos" value="aceito">
+                                Declaro que li e aceito os <a href="login.html" target="_blank" class="termos"
+                                >termos de condições</a>
+                        </label>
+
+                </fieldset>
+
                         <button>Enviar</button> <!--Botão dentro de formulario serve como submit-->
-               </form>
 
-               <h1>Área de Login</h1>
-               <form>
-                       
-
-              </form>
-
-
-
-        </table>
-
-
+                <picture>
+                        <source media="(min-width: 650px)" srcset="imagem1.png"/>
+                        <source media="(min-width: 450px)" srcset="imagem2.jpg"/>
+                        <img src="imagem3.jpg"/>
+                </picture>
+                <br/>
+                <img class ="paisagem" src="paisagem.jpg">
 
 
 </body>
