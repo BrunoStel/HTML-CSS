@@ -1,9 +1,19 @@
+:root{
+  --bg-color: #fff;
+  --font-size: 25px;
+}
+
 *{
     box-sizing: border-box;
 }
 body{
     margin: 50px;
-    font-size: 25px;
+    font-size: var(--font-size);
+
+}
+
+section{
+    display: flex;
 }
 
 .formatar{
@@ -121,8 +131,9 @@ legend{
     object-fit: cover; /*Impede a distorção da imagem, mas preenche todos os 400x400 cortando a imagem*/
 }
 
-@media (min-width: 1000px){ /*O CSS irá aplicar na página todos as condições acima, e mais o que for definido pelo media
-    respeitando a condição passada entre ()*/
+ /*@media - O CSS irá aplicar na página todos as condições acima, e mais o que for definido pelo media respeitando a condição 
+ passada entre ()*/
+@media (min-width: 1000px){
     body{
         background-color: coral;
     }
@@ -132,29 +143,32 @@ legend{
 }
 
 @media(min-width:700px) and (max-width: 1000px){
+    :root{
+        --font-size: 20px;
+    }
     body{
         background-color: cyan;
     }
-    h1{
-        font-size: 50px;
-    }
+    
 
 }
 @media (min-width: 300px) and (max-width: 700px){ 
+    :root{
+        --font-size: 15px;
+    }
     body{
         background-color: beige;
     }
-    h1{
-        font-size: 25px;
-    }
+    
 }
 @media (max-width: 300px){ 
+    :root{
+        --font-size: 10px;
+    }
     body{
         background-color: rgb(160, 160, 52);
     }
-    h1{
-        font-size: 15px;
-    }
+   
 }
 
 @media only print{/*Para configurar para impressão*/
@@ -168,4 +182,61 @@ legend{
     table,td{
         border: 0;
     }
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+@media (orientation: landscape){
+    section{
+        flex-direction: row;
+    }
+}
+@media (orientation: portrait){
+    section{
+        flex-direction: column;
+    }
+}
+
+/*Deixando o video responsivo*/
+.video{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.video-area{
+    position: relative;
+    height: 0px;
+    padding: 0px 0px 56.25%;
+}
+
+.video-area iframe{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+/*max e min*/
+.img1{
+    margin-top: 30px;
+    width: max(50%, 500px);
+}
+
+/*Função calc para determinar larguram/altura */
+.calc{
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 100px);
+    height: 200px;
+
+
 }
