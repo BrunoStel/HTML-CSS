@@ -55,7 +55,7 @@ body{
 }
 
 .sombras{
-    transition:all 0.5s linear;/*todos tipos de propriedade, duração, e a forma*/
+    transition:all 0.5s ease;/*todos tipos de propriedade aplicadas, duração, e a forma*/
 }
 
 /*WordWrap*/
@@ -65,5 +65,17 @@ body{
     border: 1px solid #000;
     margin-top: 200px;
     word-wrap: break-word;
+
+}
+
+/*Transform*/
+.quadrado{
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    background-color: green;
+    transform: rotate(30deg); /*scale, rotate, skew, rotateX, rotateY*/
 
 }
